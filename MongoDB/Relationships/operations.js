@@ -9,7 +9,7 @@ const createAuthor = async (name, age) => {
   const finalAuthor = await author.save();
   return finalAuthor;
 };
-
+ 
 const createCourse = async (name, author) => {
   let course = new CourseModel();
   course.name = name;

@@ -1,4 +1,5 @@
 const ProductModel = require("./models/productModel");
+
 const createProduct = async (title, price, tags) => {
   console.log("createProduct");
   let product = new ProductModel();
