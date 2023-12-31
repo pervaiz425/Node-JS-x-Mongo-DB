@@ -8,7 +8,7 @@
   <title>Calculator Form</title>
 </head>
 <body>
-  <!-- <% if (typeof result !== 'undefined' && result !== null) { %>: This is an EJS opening tag for a JavaScript block. It's used for embedding JavaScript code within the EJS template. In this case, it's a conditional statement written in JavaScript. -->
+  <!-- This is an EJS opening tag for a JavaScript block. It's used for embedding JavaScript code within the EJS template. In this case, it's a conditional statement written in JavaScript. -->
   <% if (typeof result !== 'undefined' && result !== null) { %>
     <div style="background-color: #d4edda; color: #155724; padding: 10px; margin-bottom: 10px;">
       Result: <%= result %>
@@ -17,7 +17,7 @@
 
   <!-- The <%= %> in EJS (Embedded JavaScript) represents a tag used to output the result of a JavaScript expression directly into the HTML. This syntax is known as "escaping" and is used to inject dynamic content into the HTML markup. -->
   <h1>Calculator</h1>
-
+  
   <form method="post" action="/calculator">
     <label for="a">Enter value for a:</label>
     <input type="text" id="a" name="a" required>

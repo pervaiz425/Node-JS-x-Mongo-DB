@@ -35,4 +35,6 @@ app.delete("/api/products/:index", (req, res) => {
   res.send(products);
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("Sever started running at port 3000");
+});
