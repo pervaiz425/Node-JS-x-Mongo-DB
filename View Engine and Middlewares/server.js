@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express();
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,12 +16,12 @@ app.get("/calculator", (req, res) => {
 // POST method to handle form submission
 app.post("/calculator", (req, res) => {
   const { a, b } = req.body;
-
+  console.log(req.body);
   // Perform calculation (addition in this case)
   const result = parseInt(a) + parseInt(b);
 
   // Render the form with the result embedded in a div
-  res.render("index", { result: result });
+  res.render("index", { res: result });
 });
 
 app.listen(3000, () => {

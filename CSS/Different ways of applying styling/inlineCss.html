@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <!-- Demonstrate the use of absolute positioning. -->
+    <!-- I want to observe how the position property apply positioning on elements relative to other elements. -->
+    <div style="position: relative; width: 500px; height: 500px; background-color: #eee;">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, harum necessitatibus. Quis ad doloribus voluptatibus?</p>
+      </div>
+      <div style="position: absolute; top: 0; left: 0; width: 100px; height: 100px; background-color: #f00;"></div>
+      <div style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background-color: #0f0;"></div>
+      <div style="position: absolute; bottom: 0; left: 0; width: 100px; height: 100px; background-color: #00f;"></div>
+      <div style="position: absolute; bottom: 0; right: 0; width: 100px; height: 100px; background-color: #ff0;"></div>
+    </div>
+  
+    <!-- The absolute positioned elements are positioned relative to the first parent element that has a position other than static. If there is no such parent element, then the absolute positioned elements are positioned relative to the html element. -->
+  
+    <!-- Now lets demonstrate the use of fixed positioning. -->
+    <!-- I want to observe how the position property apply positioning on elements relative to the viewport. -->
+  
+    <div style="position: fixed; top: 0; left: 0; width: 100px; height: 100px; background-color: #f00;"></div>
+    <!-- A fixed positioned element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. -->
+  
+    <!-- Now lets demonstrate the use of sticky positioning. -->
+    <!-- I want to observe how the position property apply positioning on elements relative to the viewport. -->
+  
+    <div style="position: sticky; top: 0; left: 0; width: 100px; height: 100px; background-color: #f00;"></div>
+    <!-- A sticky positioned element is treated as relatively positioned until its containing block crosses a
+</body>
+</html>

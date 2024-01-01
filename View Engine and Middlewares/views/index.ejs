@@ -9,9 +9,9 @@
 </head>
 <body>
   <!-- This is an EJS opening tag for a JavaScript block. It's used for embedding JavaScript code within the EJS template. In this case, it's a conditional statement written in JavaScript. -->
-  <% if (typeof result !== 'undefined' && result !== null) { %>
+  <% if (typeof res !== 'undefined' && res !== null) { %>
     <div style="background-color: #d4edda; color: #155724; padding: 10px; margin-bottom: 10px;">
-      Result: <%= result %>
+      Result: <%= res %>
     </div>
   <% } %>
 
@@ -19,12 +19,15 @@
   <h1>Calculator</h1>
   
   <form method="post" action="/calculator">
-    <label for="a">Enter value for a:</label>
-    <input type="text" id="a" name="a" required>
+    <label for="a">Enter value for a:</label> 
+    <input type="text" name="a" required>
 
     <label for="b">Enter value for b:</label>
     <input type="text" id="b" name="b" required>
-
+    <br>
+    <label for="rado">Select an operation:</label>
+    <input type="radio" id="rado" name="Item1" value="123">
+    <input type="radio" id="rado" name="Item2" value="123">
     <button type="submit">Calculate</button>
   </form>
 </body>

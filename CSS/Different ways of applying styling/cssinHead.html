@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      
+      /* Demonstrate the use of absolute positioning. */
+      /* I want to observe how the position property apply positioning on elements relative to other elements. */
+  
+      div {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: #eee;
+      }
+  
+      div > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+  
+      div > div:nth-child(2) {
+        top: 0;
+        right: 0;
+        background-color: #0f0;
+      }
+  
+      div > div:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        background-color: #00f;
+      }
+  
+      div > div:nth-child(4) {
+        bottom: 0;
+        right: 0;
+        background-color: #ff0;
+      }
+  
+      /* The absolute positioned elements are positioned relative to the first parent element that has a position other than static. If there is no such parent element, then the absolute positioned elements are positioned relative to the html element. */
+  
+      /* Now lets demonstrate the use of fixed positioning. */
+      /* I want to observe how the position property apply positioning on elements relative to the viewport. */
+  
+      div:nth-child(2) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+  
+      /* A fixed positioned element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+  
+      /* Now lets demonstrate the use of sticky positioning. */
+      /* I want to observe how the position property apply positioning on elements relative to the viewport. */
+  
+      div:nth-child(3) {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+  
+      /* A sticky positioned element is treated as relatively positioned until its containing block crosses a specified offset (defined with top, right, bottom, or left). It then behaves like a fixed positioned element. */
+  </style>
+</head>
+<body>
+  <!-- Demonstrate the use of css in head section  -->
+  <form>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <input type="text" name="age" id="age" placeholder="Enter your age">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+    
