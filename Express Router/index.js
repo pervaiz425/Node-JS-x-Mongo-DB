@@ -16,3 +16,14 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
+
+const router = express.Router();
+router.get("/:id", (req, res) => {
+  const {app, bpp} = req.body;
+  return JSON.stringify(app, bpp);
+})
+
+
+module.exports = {
+  func1, func2, func3
+}
